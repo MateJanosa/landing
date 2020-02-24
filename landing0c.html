@@ -196,7 +196,7 @@
             let W = canv.offsetWidth - s2;
             let x2 = l.x / WMAX
             let y2 = l.y / HMAX
-            log(` x:${Math.floor(W * x2)} y:${ Math.floor(lander.y)})
+            log(` x:${Math.floor(W * x2)} y:${ Math.floor(lander.y)}`, 2)
 
             ctx.drawImage(lander.sprite.sheet,ix*lander.sprite.width, iy*lander.sprite.height, lander.sprite.width, lander.sprite.height, Math.floor(W * x2), H - Math.floor(H * y2), s2, s2)
         }
